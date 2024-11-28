@@ -4,12 +4,9 @@ from code.Menu import Menu
 Size=(640, 480)
 
 class Game:
-    def __init__(self):
-        self.window = None
-
     def __init_(self):
         pygame.init()
-        window = pygame.display.set_mode(size=Size)
+        self.window = pygame.display.set_mode(size=Size)
 
     def run(self, ):
         while True:
