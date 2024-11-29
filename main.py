@@ -1,5 +1,4 @@
-from code.Game import Game
+from source.Game import Game
 
-game = Game()
-print(game)
-game.run()
+gameProcess = Game()
+gameProcess.run()
