@@ -1,0 +1,17 @@
+from source.Background import Background
+from source.Const import display_width, display_height
+from source.Ground import Ground
+
+
+class EntityFactory:
+    @staticmethod
+    def get_entity(entity_name: str, position=(0,0)):
+        match entity_name:
+            case 'lvl1_bg':
+                list_bg=[]
+                for i in range(5):
+                     list_bg.append(Background(f'lvl1_{i + 1}',(0,0)))
+                     list_bg.append(Background(f'lvl1_{i + 1}', (display_width, 0)))
+                list_bg.append(Ground('bg_losangcompleto', (0, 0)))
+                # list_bg.append(Ground('bg_neve', (display_width, display_height)))
+                return list_bg
