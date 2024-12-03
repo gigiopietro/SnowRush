@@ -14,10 +14,10 @@ class Game:
     def run(self):
         while True:
             menu=Menu(self.display_surface)
-            return_menu=menu.run()
+            return_menu = menu.run()
 
             if return_menu==option_menu[0]:
-                level=Level(self.display_surface, "Level1", return_menu)
+                level = Level(self.display_surface, "Level1", return_menu)
                 level_return = level.run()
             elif return_menu==option_menu[2]:
                 pygame.quit()
