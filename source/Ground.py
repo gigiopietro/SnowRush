@@ -9,6 +9,9 @@ class Ground(Entity):
         self.speed = 4
         # self.start_pos = (self.rect.centerx, self.rect.centery)
 
+    def destroy(self):
+        pass
+
     def move(self, ):
         self.rect.centery -= float(self.speed / 2)
         self.rect.centerx -= float(self.speed )

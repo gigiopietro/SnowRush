@@ -2,15 +2,13 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from source.Const import display_width, lilac_color, option_menu, white_color, yellow_color
+from source.Const import display_width, lilac_color, option_menu, white_color, yellow_color, menu_path, music_path
 
-music_path = './Asset/Music/'
-menu_path = './Asset/Menu/'
 
 class Menu:
     def __init__(self, window):
         self.display_surface = window
-        self.surf = pygame.image.load(menu_path + 'PRE_ORIG_SIZE.png')
+        self.surf = pygame.image.load(menu_path + 'PRE_ORIG_SIZE.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self, ):

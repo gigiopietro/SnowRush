@@ -1,0 +1,3 @@
+class EntityMediator:
+    @staticmethod
+    def

@@ -1,6 +1,8 @@
 from source.Background import Background
 from source.Const import display_width, display_height
 from source.Ground import Ground
+from source.Obstacle import Obstacle
+from source.Player import Player
 
 # offset_y_second_ground = 399
 offset_y_second_ground = 200
@@ -25,3 +27,9 @@ class EntityFactory:
                 list_bg.append(second_ground)
                 # list_bg.append(Ground('bg_neve', (display_width, display_height)))
                 return list_bg
+            case 'Character':
+                return Player('Character', (10, display_height / 2))
+            case 'Obstacle1':
+                return Obstacle('Obstacle1', (display_width + 10, 220))
+            case 'Obstacle2':
+                return Obstacle('Obstacle2', (display_width + 10, 165))

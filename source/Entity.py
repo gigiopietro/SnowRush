@@ -13,3 +13,7 @@ class Entity(ABC):
     @abstractmethod
     def move(self,):
         pass
+
+    @abstractmethod
+    def destroy(self):
+        pass
