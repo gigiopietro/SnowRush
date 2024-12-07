@@ -24,10 +24,11 @@ class Score:
         while True:
             self.display_surface.blit(source=self.surf, dest=self.rect)
             self.score_text(48, f'Score:{player_score}', yellow_color, score_pos['Title'])
+            score = player_score[0]
+            text_nick = 'Insert a nickname (4 characters):'
+            text_info = 'Press "ESC" to return to the menu'
             if return_menu == option_menu[0]:
                 score = player_score[0]
-                text_nick = 'Insert a nickname (4 characters):'
-                text_info = 'Press "ESC" to return to the menu'
             self.score_text(20, text_nick, lilac_color, score_pos['EnterName'])
             self.score_text(20, text_info, lilac_color, score_pos['Label2'])
             for event in pygame.event.get():

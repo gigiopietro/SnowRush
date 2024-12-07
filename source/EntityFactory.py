@@ -4,8 +4,6 @@ from source.Ground import Ground
 from source.Obstacle import Obstacle
 from source.Player import Player
 
-# # offset_y_second_ground = 399
-# offset_y_second_ground = 200
 
 class EntityFactory:
     @staticmethod

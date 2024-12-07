@@ -15,7 +15,7 @@ class Entity(ABC):
         self.health = entity_health[self.name]
 
     @abstractmethod
-    def move(self,):
+    def move(self):
         pass
 
     @abstractmethod

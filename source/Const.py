@@ -24,7 +24,6 @@ score_pos ={'Title': (display_width / 2, 50),
             3: (display_width / 2, 190),
             4: (display_width / 2, 210),
             5: (display_width / 2, 230),
-
 }
 
 # Paths

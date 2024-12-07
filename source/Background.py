@@ -9,7 +9,7 @@ class Background(Entity):
     def destroy(self):
         pass
 
-    def move(self, ):
+    def move(self):
         self.rect.centerx -= self.speed
         if self.rect.right <= 0:
             self.rect.left = display_width
