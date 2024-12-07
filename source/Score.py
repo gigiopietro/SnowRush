@@ -63,7 +63,7 @@ class Score:
         db_proxy.close()
         for player_score in list_score:
             id_, nickname, score, date = player_score
-            self.score_text(20, f'            {nickname}               {score: 05d}          {date}', yellow_color, score_pos[list_score.index(player_score)])
+            self.score_text(20, f'{nickname}          {score: 05d}          {date}', yellow_color, score_pos[list_score.index(player_score)])
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
