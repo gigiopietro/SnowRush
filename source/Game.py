@@ -23,7 +23,7 @@ class Game:
                 level = Level(self.display_surface, "Level1", return_menu)
                 level_return = level.run(player_score)
                 if level_return:
-                    score.save_score(game_mode, player_score)
+                    score.save_score(return_menu, player_score)
 
             elif return_menu==option_menu[1]:
                 score.show_score()

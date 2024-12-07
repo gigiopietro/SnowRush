@@ -10,6 +10,6 @@ class Background(Entity):
         pass
 
     def move(self, ):
-        self.rect.centerx -= 1
+        self.rect.centerx -= self.speed
         if self.rect.right <= 0:
             self.rect.left = display_width
