@@ -1,4 +1,4 @@
-from source.Const import entity_speed, display_width
+from source.Const import entity_speed
 from source.Entity import Entity
 
 

@@ -1,4 +1,3 @@
-from source.Const import display_width, display_height
 from source.Entity import Entity
 
 

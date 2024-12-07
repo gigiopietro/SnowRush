@@ -6,8 +6,8 @@ from source.Const import display_width, lilac_color, option_menu, white_color, y
 
 
 class Menu:
-    def __init__(self, window):
-        self.display_surface = window
+    def __init__(self, display_surface):
+        self.display_surface = display_surface
         self.surf = pygame.image.load(menu_path + 'PRE_ORIG_SIZE.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 

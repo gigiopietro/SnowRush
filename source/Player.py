@@ -1,7 +1,7 @@
 import pygame.key
 from source.Entity import Entity
 
-JUMP_Y = 120
+JUMP_Y = 140
 class Player(Entity):
     def __init__(self, name:str, position: tuple):
         self.is_jumping = False
@@ -15,7 +15,6 @@ class Player(Entity):
         # atualizar estados
         if self.rect.centery >= self.start_position_y and self.is_falling:
             self.is_falling = False
-
 
         # checar inputs para modificar estados
         key_pressed = pygame.key.get_pressed()
